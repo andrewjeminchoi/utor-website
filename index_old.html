@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Andrew Choi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Andrew Jemin Choi<br>ECE @ UofT</b></h3>
+  </div>
+  <a href="#" onclick="w3_close()" class="w3-padding w3-hover-white">Home</a> 
+  <a href="#about_me" onclick="w3_close()" class="w3-padding w3-hover-white">About Me</a> 
+  <a href="http://individual.utoronto.ca/ajchoi/projects/projects.html">Projects</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding w3-hover-white">Contact</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-btn w3-red w3-border w3-border-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Andrew Jemin Choi</span>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:60px" id="showcase">
+    <h1 class="w3-jumbo"><b>Andrew Jemin Choi</b></h1>
+  </div>
+  
+  <!-- Bio -->
+  <div class="w3-container" id="bio" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Bio</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>An Engineering student with an affinity to invent and explore.</p>
+    <p>I am currently a third year Electrical and Computer Engineering (ECE) student at the University of Toronto. 
+	You can also learn more about me in my 
+    <a href="http://individual.utoronto.ca/ajchoi/andrewchoi_aboutme.pdf"><b>resume</b></a>
+	or
+	<a href="http://individual.utoronto.ca/ajchoi/andrewchoi_coverletter.pdf"><b>cover letter</b></a>. </p>
+	
+    <p>I like to code and hack stuff. Visit my 
+	<a href="http://www.github.com/andrewjeminchoi"><b>Github</b></a> 
+	to see what I've been working on, or check out some of my projects 
+	<a href="http://individual.utoronto.ca/ajchoi/projects/projects.html"><b>here</b></a>. </p>
+  </div>
+  
+  <!-- Conatact -->
+  <div class="w3-container" id="contact" style="margin-top:25px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>You can reach me at: 
+      <a href="mailto:aj.choi@mail.utoronto.ca">aj.choi@mail.utoronto.ca</a>.
+      Drop me an email anytime!
+    </p>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> 
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=11228282; 
+var sc_invisible=0; 
+var sc_security="72c6d607"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11228282/0/72c6d607/0/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</p></div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>

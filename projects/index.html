@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<title>Andrew Choi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Quicksand", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Andrew Jemin Choi<br>ECE @ UofT</b></h3>
+  </div>
+  <a href="http://individual.utoronto.ca/ajchoi/">Home</a> 
+  <a href="#Safran" onclick="w3_close()" class="w3-padding w3-hover-white">Safran</a> 
+  <a href="#OSM_mapper" onclick="w3_close()" class="w3-padding w3-hover-white">OSM Mapper</a> 
+
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-btn w3-red w3-border w3-border-white w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Andrew Jemin Choi</span>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:60px" id="showcase">
+    <h1 class="w3-jumbo"><b>Projects</b></h1>
+  </div>
+  
+  <!-- IMDI Safran Project -->
+  <div class="w3-container" id="Safran" style="margin-top:20px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Improving Traceability in Avionic Software</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>I received the NSERC Experience Award, valued at $5625, to undertake a industrial research project at 
+	<a href="http://www.safran-group.com/"><b>Safran</b></a>. 
+	</p>
+	<p>As a member of the Software team, I was responsible for creating software architecture diagrams and updating 
+	Airborne Software documentation, adhering to the DO-178B standards. 
+	In addition, I worked on improving the architectural and documentation process by devising new methods 
+	to create more accurate and consistent documentation. During this process, I developed a Python script to 
+	parse avionic requirements and cross-check data flow in the code. Consequently, the program reduced 
+	errors in documentation by about 50%. 
+	</p>
+	You can also check out my 
+    <a href="http://individual.utoronto.ca/ajchoi/projects/andrewchoi_imdi_poster.pdf"><b>Research Poster</b></a>
+	(shown below) for the Institute for Multidisciplinary Design & Innovation at the University of Toronto. </p>
+	<!-- Photo grid (modal) -->
+	  <div class="w3-row-padding">
+		<div class="w3-full">
+		  <img src="http://individual.utoronto.ca/ajchoi/projects/IMDI_poster.PNG" style="width:100%" onclick="onClick(this)" 
+		  alt="Research Poster for UT-IMDI and Safran">
+		</div>
+
+	  <!-- Modal for full size images on click-->
+	  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+		<span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+		  <img id="img01" class="w3-image">
+		  <p id="caption"></p>
+		</div>
+	  </div>
+	
+  </div>
+  
+  <!-- OSM Mapper -->
+  <div class="w3-container" id="OSM_mapper" style="margin-top:60px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>OpenStreetMap Mapping Software (C++)</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+	
+	<!-- Photo grid (modal) -->
+	  <div class="w3-row-padding">
+		<div class="w3-half">
+		  <img src="http://individual.utoronto.ca/ajchoi/projects/OSM/OSM1.png" style="width:100%" onclick="onClick(this)" 
+		  alt="Screenshot of the Graphical Interface">
+		  <img src="http://individual.utoronto.ca/ajchoi/projects/OSM/OSM3.png" style="width:100%" onclick="onClick(this)" 
+		  alt="Screenshot of the Graphical Interface">
+		</div>
+
+		<div class="w3-half">
+		  <img src="http://individual.utoronto.ca/ajchoi/projects/OSM/OSM2.png" style="width:100%" onclick="onClick(this)" 
+		  alt="Zoomed into the Map">
+		  <img src="http://individual.utoronto.ca/ajchoi/projects/OSM/OSM4.png" style="width:100%" onclick="onClick(this)" 
+		  alt="Finding the shortest path between two places in Toronto">
+		</div>
+	  </div>
+
+	  <!-- Modal for full size images on click-->
+	  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+		<span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+		<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+		  <img id="img01" class="w3-image">
+		  <p id="caption"></p>
+		</div>
+	  </div>
+  
+    <p>In a team of three, I developed a mapping software on Linux, using the OpenStreetMap Database and APIs. 
+	The software used efficient graph algorithms to find closest paths between points of interest 
+	(50% faster than the expected metrics). 
+	</p>
+	<p>You can check it out on my
+	<a href="https://github.com/andrewjeminchoi/OSM-Mapper"><b>Github</b></a>.
+	</p>
+	<p>sticky
+	<a href="http://individual.utoronto.ca/ajchoi/stickyboard.html"><b>board</b></a>.
+	</p>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> </p></div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
