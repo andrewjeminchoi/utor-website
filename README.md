@@ -1,3 +1,3 @@
 # utor-website
 
-Personal website - [Visit me!](https://individual.utoronto.ca/ajchoi)
+Personal website - [Visit me!](http://individual.utoronto.ca/ajchoi/)
